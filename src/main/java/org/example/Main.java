@@ -5,6 +5,7 @@ public class Main {
 
         ejercicio2();
         ejercicio4();
+        ejercicio6();
     }
 
     //Ejercicio 2: Uso de if y operadores ternarios
@@ -49,5 +50,30 @@ public class Main {
             System.out.println("Numero:" + i);
         }
     }
+
+
+    /**
+     *Ejercicio 6: Manejo de valores nulos en Kotlin
+     * Kotlin tiene un sistema de tipos nulos más seguro que Java. Explica cómo funciona la
+     * seguridad de tipos nulos en Kotlin (String?), comparándola con Java.
+     * Kotlin:
+     * fun main() {
+     *  var personaje: String? = null
+     *  if (personaje != null) {
+     *      println("El personaje es $personaje")
+     *  } else {
+     *      println("No hay personaje.")
+     *  }
+     * }
+     */
+    public static void ejercicio6() {
+        String personaje = null;
+        if (personaje != null) {
+            System.out.println("El personaje es " + personaje);
+        } else {
+            System.out.println("No hay personaje.");
+        }
+    }
+
 }
 
